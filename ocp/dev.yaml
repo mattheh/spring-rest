@@ -9,7 +9,7 @@ containerEnv:
 
 image:
   repository: image-registry.openshift-image-registry.svc:5000
-  tag: latest
+  tag: devnew
   pullPolicy: Always
 
 
