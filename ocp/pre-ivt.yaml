@@ -8,7 +8,7 @@ containerEnv:
     value: "DEBUG"
 
 image:
-  repository: image-registry.openshift-image-registry.svc:5000
+  repository: mhill.azurecr.io/helm/ocp-openjdk:v1
   tag: ivtnew
   pullPolicy: Always
 
