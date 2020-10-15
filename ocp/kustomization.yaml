@@ -1,2 +1,4 @@
 commonLabels:
   app: kustomize-label
+resources:
+  - all.yaml
