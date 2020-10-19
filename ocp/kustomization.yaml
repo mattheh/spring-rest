@@ -5,12 +5,14 @@ commonLabels:
 patchesJSON6902:
 - target:
     name: basic-spring-boot-dev
+    kind: ImageStream
   patch: |-
     - op: replace
       path: /metadata/labels/partition
       value: customerB
 - target:
     name: basic-spring-boot-dev
+    kind: ImageStream
   patch: |-
     - op: remove
       path: /metadata/labels/release
