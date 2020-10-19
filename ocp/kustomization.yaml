@@ -6,6 +6,7 @@ patchesJSON6902:
 - target:
     name: basic-spring-boot-dev
     kind: ImageStream
+    version: v1
   patch: |-
     - op: replace
       path: /metadata/labels/partition
@@ -13,6 +14,7 @@ patchesJSON6902:
 - target:
     name: basic-spring-boot-dev
     kind: ImageStream
+    version: v1
   patch: |-
     - op: remove
       path: /metadata/labels/release
