@@ -4,13 +4,13 @@ commonLabels:
   app: kustomize-label
 patchesJSON6902:
 - target:
-    version: v1
+    name: basic-spring-boot-dev
   patch: |-
     - op: replace
       path: /metadata/labels/partition
       value: customerB
 - target:
-    version: v1
+    name: basic-spring-boot-dev
   patch: |-
     - op: remove
       path: /metadata/labels/release
