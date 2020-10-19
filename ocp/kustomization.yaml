@@ -1,4 +1,16 @@
-commonLabels:
-  app: kustomize-label
 resources:
   - all.yaml
+commonLabels:
+  app: kustomize-label
+patchesJSON6902:
+- target:
+    version: v1
+  patch: |-
+    - op: replace
+      path: /metadata/labels/partition
+      value: customerB
+- target:
+    version: v1
+  patch: |-
+    - op: remove
+      path: /metadata/labels/release
