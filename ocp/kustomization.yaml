@@ -5,7 +5,6 @@ commonLabels:
 patches:
 - target:
     name: basic-spring-boot-dev
-    kind: ImageStream
     version: v1
   patch: |-
     - op: replace
@@ -13,7 +12,6 @@ patches:
       value: customerB
 - target:
     name: basic-spring-boot-dev
-    kind: ImageStream
     version: v1
   patch: |-
     - op: remove
