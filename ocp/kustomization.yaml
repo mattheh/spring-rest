@@ -2,7 +2,7 @@ resources:
   - all.yaml
 commonLabels:
   app: kustomize-label
-patchesJSON6902:
+patches:
 - target:
     name: basic-spring-boot-dev
     kind: ImageStream
